@@ -10,55 +10,66 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #00a8ff, #9c88ff);
+            background: linear-gradient(135deg, #2e2b47, #8e44ad);
             color: #fff;
             text-align: center;
         }
 
         header {
             background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            border-bottom: 3px solid #00b894;
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
+            color: #00b894;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         main {
-            padding: 50px 20px;
+            padding: 60px 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+            margin-top: 40px;
         }
 
         main h2 {
             font-size: 2rem;
-            margin-bottom: 10px;
+            color: #fff;
+            margin-bottom: 15px;
+            text-transform: uppercase;
         }
 
         main p {
             font-size: 1.2rem;
             line-height: 1.6;
+            color: #b2bec3;
         }
 
         .button-container {
-            margin-top: 20px;
+            margin-top: 30px;
         }
 
         .button-container a {
             text-decoration: none;
-            background-color: #4cd137;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px;
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 12px 25px;
+            margin: 15px;
             font-size: 1rem;
             border-radius: 5px;
             display: inline-block;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             transition: background-color 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
         }
 
         .button-container a:hover {
-            background-color: #44bd32;
+            background-color: #d63031;
             transform: translateY(-3px);
         }
 
@@ -69,29 +80,44 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            text-align: center;
         }
 
         footer a {
-            color: #4cd137;
+            color: #00b894;
             text-decoration: none;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Estilo para un toque retro */
+        .retro-wave {
+            font-family: 'Courier New', Courier, monospace;
+            color: #ff6f61;
+            text-shadow: 0 0 10px rgba(255, 111, 97, 0.8), 0 0 20px rgba(255, 111, 97, 0.8);
+        }
+
+        .neon-border {
+            border: 3px solid #00b894;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 184, 148, 0.7);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>¡Bienvenido a El Blog de Fer!</h1>
+        <h1 class="retro-wave">¡Bienvenido a El Blog de Fer!</h1>
     </header>
     <main>
-        <h2>Sobre mí</h2>
+        <h2 class="neon-border">Sobre mí</h2>
         <p>
             Hola, soy Fer y estudio el doble grado de Informática y ADE en la Universidad de Granada (UGR).
         </p>
         <p>
-            Este es mi espacio personal donde comparto ideas, aprendizajes y proyectos.
+            Este es mi espacio personal donde comparto ideas, aprendizajes y proyectos relacionados con la informática, la tecnología y más.
         </p>
         
         <!-- Botones de navegación -->
