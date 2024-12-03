@@ -10,7 +10,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #00a8ff, #b4a5ff);
+            background: linear-gradient(135deg, #00a8ff, #9c88ff);
             color: #fff;
             text-align: center;
         }
@@ -40,6 +40,28 @@
             line-height: 1.6;
         }
 
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            text-decoration: none;
+            background-color: #4cd137;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .button-container a:hover {
+            background-color: #44bd32;
+            transform: translateY(-3px);
+        }
+
         footer {
             background-color: rgba(0, 0, 0, 0.7);
             padding: 15px;
@@ -66,11 +88,18 @@
     <main>
         <h2>Sobre mí</h2>
         <p>
-            Hola, soy Fernando José Gracia Choin y estudio el doble grado de Informática y ADE en la Universidad de Granada (UGR).
+            Hola, soy Fer y estudio el doble grado de Informática y ADE en la Universidad de Granada (UGR).
         </p>
         <p>
             Este es mi espacio personal donde comparto ideas, aprendizajes y proyectos.
         </p>
+        
+        <!-- Botones de navegación -->
+        <div class="button-container">
+            <a href="proyectos.html">Mis Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="sobre.html">Más Sobre Mí</a>
+        </div>
     </main>
     <footer>
         <p>
@@ -79,4 +108,3 @@
     </footer>
 </body>
 </html>
-
