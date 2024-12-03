@@ -5,93 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
     <style>
-        /* Estilos generales */
         body {
-            font-family: 'Courier New', Courier, monospace;
-            background: linear-gradient(to bottom, #1e1e2f, #0f0f1f);
-            color: #dcdcdc;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        /* Cabecera */
-        .header h1 {
-            font-size: 3rem;
+            background: linear-gradient(45deg, #2e003e, #1900b5);
             color: #ffffff;
-            text-shadow: 0 0 10px #ff6ec7, 0 0 20px #ff6ec7, 0 0 30px #ff6ec7;
-            margin-bottom: 20px;
         }
 
-        /* Secciones principales */
-        .content-section {
-            background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(0, 128, 255, 0.8));
-            padding: 20px;
+        .header {
+            background-color: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 1.5em 0;
+        }
+
+        .header .title {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 1.5em;
+            background-color: rgba(0, 0, 0, 0.6);
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
         }
-        .retro-text {
-            font-size: 1.2rem;
+
+        .content p {
+            font-size: 1.2em;
             line-height: 1.8;
-            margin-bottom: 15px;
         }
-        .retro-text .highlight {
+
+        .content .highlight {
             color: #ff6ec7;
             font-weight: bold;
         }
 
-        /* Navegación */
-        .nav {
-            margin-top: 20px;
+        .footer {
+            text-align: center;
+            margin: 2em 0;
         }
-        .neon-button {
+
+        .footer .button {
+            display: inline-block;
             text-decoration: none;
             color: #ffffff;
-            background: linear-gradient(90deg, #ff6ec7, #6a0dad);
-            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.7em 1.2em;
+            margin: 0 0.5em;
             border-radius: 5px;
-            font-size: 1.1rem;
-            text-shadow: 0 0 5px #ff6ec7;
-            transition: transform 0.2s, box-shadow 0.2s;
-            margin: 0 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
         }
-        .neon-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 15px #ff6ec7;
+
+        .footer .button:hover {
+            background-color: rgba(255, 255, 255, 0.5);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1>Sobre mí</h1>
-        </header>
-        <main class="main-content">
-            <section class="content-section">
-                <p class="retro-text">¡Hola! Mi nombre es <span class="highlight">Ferobrine</span>, y este es mi pequeño espacio personal.</p>
-                <p class="retro-text">Me apasiona la música de los 80, especialmente artistas como <span class="highlight">Falco</span> y <span class="highlight">Modern Talking</span>. De ahí surge la estética <span class="highlight">retro wave</span> que inspira este blog.</p>
-                <p class="retro-text">Soy un amante de la <span class="highlight">historia</span>, siempre curioso por aprender sobre el pasado y su impacto en nuestro presente. También disfruto los <span class="highlight">juegos de estrategia</span> como <span class="highlight">Stellaris</span> y <span class="highlight">Hearts of Iron IV</span>, donde puedo explorar y planificar.</p>
-                <p class="retro-text">Entre mis aficiones, destacan los <span class="highlight">relojes</span> y las <span class="highlight">fragancias</span>, siendo siempre una búsqueda de piezas únicas. Y no olvidemos que soy una persona <span class="highlight">de perros</span>, ¡los amo!</p>
-                <p class="retro-text">Finalmente, disfruto mucho jugar a <span class="highlight">Counter-Strike 2 (CS2)</span>, un juego que me mantiene entretenido y competitivo.</p>
-            </section>
-        </main>
-        <footer class="footer">
-            <nav class="nav">
-                <a href="index.html" class="neon-button">Inicio</a>
-                <a href="proyectos.html" class="neon-button">Proyectos</a>
-                <a href="contacto.html" class="neon-button">Contacto</a>
-            </nav>
-        </footer>
-    </div>
+    <header class="header">
+        <h1 class="title">Sobre mí</h1>
+    </header>
+    <main class="content">
+        <section class="card">
+            <p>¡Hola! Mi nombre es <span class="highlight">Ferobrine</span>, y este es mi pequeño espacio personal.</p>
+            <p>Me apasiona la música de los 80, especialmente artistas como <span class="highlight">Falco</span> y <span class="highlight">Modern Talking</span>. De ahí surge la estética <span class="highlight">retro wave</span> que inspira este blog.</p>
+            <p>Soy un amante de la <span class="highlight">historia</span>, siempre curioso por aprender sobre el pasado y su impacto en nuestro presente. También disfruto los <span class="highlight">juegos de estrategia</span> como <span class="highlight">Stellaris</span> y <span class="highlight">Hearts of Iron IV</span>, donde puedo explorar y planificar.</p>
+            <p>Entre mis aficiones, destacan los <span class="highlight">relojes</span> y las <span class="highlight">fragancias</span>.</p>
+            <p>Finalmente, disfruto mucho jugar a <span class="highlight">Counter-Strike 2 (CS2)</span>, un juego que me mantiene entretenido y competitivo.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav>
+            <a href="index.html" class="button">Inicio</a>
+            
+        </nav>
+    </footer>
 </body>
 </html>
